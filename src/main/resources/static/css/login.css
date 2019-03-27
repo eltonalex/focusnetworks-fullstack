@@ -10,6 +10,20 @@
 	width: 100%;
 }
 
+.content{
+	background-color: #cccccc;
+	width: 100%;
+}
+
+.content button[type="submit"]{
+	font-weight: 700;
+	padding: 12px 60px;
+	border-radius: 25px;
+	border-color: #fdbb00;
+	background-color: #fdbb00;
+	color: #222222;
+}
+
 .h4-title {
 	text-align: center;
 	color: #ffffff;

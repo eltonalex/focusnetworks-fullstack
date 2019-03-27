@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" 
-xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-layout:decorator="layout">
-	
-	<th:block layout:fragment="content">
-		<div class="alert alert-success" role="alert">
-		  <h1>Seja bem-vindo!</h1> 
-		  <i>"	O aprendizado nunca termina. 
-		  		Não existe parte da vida que não contenha lições. 
-		  		Se você está vivo, há lições para aprender."</i>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout">
+
+<th:block layout:fragment="content">
+	<div class="col-md-12 content">
+	<p>
+		<div class="alert alert-success">
+			<h4>Seja bem-vindo!</h4>
+			<i>" - O aprendizado nunca termina. N&atilde;o existe parte da vida que
+				n&atilde;o contenha li&ccedil;&otilde;es. Se voc&ecirc; est&aacute; vivo, h&aacute; li&ccedil;&otilde;es para aprender."</i>
 		</div>
-	</th:block>
+	</p>
+	</div>
+</th:block>
 </html>
