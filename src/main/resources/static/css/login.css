@@ -1,18 +1,23 @@
 @charset "ISO-8859-1";
+
 /* Set orange e dark grey background color*/
 .side-img {
 	background-color: #ff6900;
 	width: 100%;
+	min-height:100%;
 }
 
 .side-login {
 	background-color: #222222;
 	width: 100%;
+	min-height:100%;
 }
 
 .content{
 	background-color: #cccccc;
 	width: 100%;
+	min-height:100%;
+	position: relative;
 }
 
 .content button[type="submit"]{
@@ -22,6 +27,12 @@
 	border-color: #fdbb00;
 	background-color: #fdbb00;
 	color: #222222;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
 }
 
 .h4-title {

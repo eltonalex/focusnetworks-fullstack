@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<meta charset="utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>FOCUSNETWORKS | DESENVOLVEDOR FULL STACK</title>
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+	<link rel="stylesheet" th:href="@{/css/login.css}" />
+</head>
+<body>
+	
+	<th:block layout:replace="fragments/header"></th:block>
+	
+	<div class="container-fluid">
+		<div class="row">
+			<th:block layout:fragment="content"></th:block>
+		</div>
+	</div>
+	
+	<script th:src="@{/js/jquery-3.2.1.min.js}"></script>
+	<script th:src="@{/js/bootstrap.min.js}"></script>
+	<script type="text/javascript">
+		function habilitar(){
+			if(document.getElementById('check').checked){
+				document.getElementById('button-sign-up').disabled = false;
+			} else {
+				document.getElementById('button-sign-up').disabled = true;
+			}
+		}
+	</script>
+	
+</body>
+</html>

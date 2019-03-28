@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-	layout:decorator="layout">
+	layout:decorator="layout-login">
 
 <th:block layout:fragment="content">
 
@@ -9,7 +9,7 @@
 		<br /><br /><br />
 		<h4 class="h4-title">Discover the most exciting places on our
 			planet</h4>
-		<br />
+		<br /><br /><br />
 		<p align="center">
 			<img class="img-responsive" alt="FERRIS WHEEL IN LONDON" th:src="@{/img/fwl.jpg}" width="300" height="267"/>
 		</p>
@@ -45,6 +45,7 @@
 						name="email" th:field="*{email}"
 						placeholder="your e-mail goes here..." class="form-control input-form" required="required" />
 				</div>
+				<br />
 				<div class="form-group">
 					<input class="regular-checkbox" id="check" type="checkbox" name="iagree" value="ok" onclick="habilitar()"/><font color="#ffffff"> I agree to all terms and conditions </font><a href="#">Terms</a>
 				</div>
